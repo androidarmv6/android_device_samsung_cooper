@@ -1,0 +1,48 @@
+#
+# system.prop for GT-S5830
+#
+
+## Graphics
+ro.opengles.version=131072
+ro.sf.lcd_density=160
+media.stagefright.enable-player=true
+video.accelerate.hw=1
+debug.sf.hw=1
+persist.sys.use_dithering=2
+
+## RIL, telephony
+rild.libpath=/system/lib/libsec-ril.so
+rild.libargs=-d /dev/smd0
+ro.telephony.default_network=0
+ro.ril.hsxpa=1
+ro.ril.gprsclass=10
+ro.telephony.ril_class=CasRIL
+mobiledata.interfaces=pdp0,gprs,ppp0
+ro.telephony.call_ring.delay=0
+ro.ril.disable.power.collapse=0
+DEVICE_PROVISIONED=1
+
+## A-GPS
+ro.ril.def.agps.mode=2
+ro.ril.def.agps.feature=1
+
+## Wi-Fi interface
+wifi.interface=wlan0
+wifi.supplicant_scan_interval=15
+
+## Dalvik
+dalvik.vm.lockprof.threshold=500
+dalvik.vm.dexopt-flags=m=y
+dalvik.vm.heapstartsize=5m	
+dalvik.vm.heapgrowthlimit=24m	
+dalvik.vm.heapsize=48m
+dalvik.vm.execution-mode=int:jit
+dalvik.vm.dexopt-data-only=1
+
+## Mass storage
+persist.sys.usb.config=mass_storage,adb
+persist.service.adb.enable=1
+ro.vold.umsdirtyratio=20
+
+## Camcorder
+debug.camcorder.disablemeta=1

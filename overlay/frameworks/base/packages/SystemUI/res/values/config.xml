@@ -1,0 +1,6 @@
+<resources>
+
+    <bool name="config_hspa_data_distinguishable">true</bool>
+
+</resources>
+
