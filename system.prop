@@ -9,6 +9,8 @@ media.stagefright.enable-player=true
 video.accelerate.hw=1
 debug.sf.hw=1
 persist.sys.use_dithering=2
+debug.enabletr=false
+debug.hwui.render_dirty_regions=false
 
 ## RIL, telephony
 rild.libpath=/system/lib/libsec-ril.so
@@ -34,7 +36,7 @@ wifi.supplicant_scan_interval=15
 dalvik.vm.lockprof.threshold=500
 dalvik.vm.dexopt-flags=m=y
 dalvik.vm.heapstartsize=5m  
-dalvik.vm.heapgrowthlimit=24m	
+dalvik.vm.heapgrowthlimit=24m  
 dalvik.vm.heapsize=48m
 dalvik.vm.execution-mode=int:jit
 dalvik.vm.dexopt-data-only=1
