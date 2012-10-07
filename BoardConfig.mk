@@ -36,3 +36,5 @@ TARGET_RECOVERY_FSTAB := device/samsung/cooper/recovery/recovery.fstab
 
 # Board has 5MP Camera
 BOARD_CAMERA_5MP := true
+COMMON_GLOBAL_CFLAGS += -DSAMSUNG_CAMERA_QCOM
+
