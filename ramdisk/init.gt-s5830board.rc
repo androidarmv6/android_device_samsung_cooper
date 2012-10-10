@@ -188,7 +188,7 @@ service memsicd /system/bin/memsicd
     class main
     user root
     group root
-    oneshot	
+    oneshot    
 
 # From init.gt-i5500.rc by subpsyke
 service get_macaddrs /system/bin/get_macaddrs
