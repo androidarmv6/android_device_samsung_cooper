@@ -38,7 +38,7 @@ dalvik.vm.dexopt-flags=m=y
 dalvik.vm.heapstartsize=5m  
 dalvik.vm.heapgrowthlimit=24m  
 dalvik.vm.heapsize=48m
-dalvik.vm.execution-mode=int:jit
+dalvik.vm.execution-mode=int:fast
 dalvik.vm.dexopt-data-only=1
 
 ## Mass storage
