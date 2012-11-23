@@ -48,6 +48,23 @@ ro.ril.def.agps.feature=1
 ## Wi-Fi interface
 wifi.interface=wlan0
 
+## Memory
+sys.mem.max_hidden_apps=10
+
+sys.mem.FOREGROUND_APP_ADJ=0
+sys.mem.VISIBLE_APP_ADJ=3
+sys.mem.PERCEPTIBLE_APP_ADJ=6
+sys.mem.BACKUP_APP_ADJ=10
+sys.mem.HIDDEN_APP_MIN_ADJ=12
+sys.mem.HIDDEN_APP_MAX_ADJ=15
+
+sys.mem.FOREGROUND_APP_MEM=8192
+sys.mem.VISIBLE_APP_MEM=12288
+sys.mem.PERCEPTIBLE_APP_MEM=30720
+sys.mem.BACKUP_APP_MEM=36864
+sys.mem.HIDDEN_APP_MIN_MEM=41984
+sys.mem.HIDDEN_APP_MAX_MEM=48128
+
 ## Dalvik
 dalvik.vm.lockprof.threshold=500
 dalvik.vm.dexopt-flags=m=y
