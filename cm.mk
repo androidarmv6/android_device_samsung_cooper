@@ -8,7 +8,7 @@ $(call inherit-product, vendor/cm/config/common_mini_phone.mk)
 $(call inherit-product, device/samsung/cooper/full_cooper.mk)
 
 # Release name and versioning
-PRODUCT_RELEASE_NAME := GalaxyGio
+PRODUCT_RELEASE_NAME := GalaxyCooper
 PRODUCT_VERSION_DEVICE_SPECIFIC := -GT-S5830
 -include vendor/cm/config/common_versions.mk
 
