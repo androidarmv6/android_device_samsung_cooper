@@ -25,15 +25,16 @@
          USB interfaces.  If the device doesn't want to support tething over USB this should
          be empty.  An example would be "usb.*" -->
     <string-array translatable="false" name="config_tether_usb_regexs">
-        <item>"usb\\d"</item>
         <item>"rndis\\d"</item>
+        <item>"usb\\d"</item>
     </string-array>
 
     <!-- List of regexpressions describing the interface (if any) that represent tetherable
          Wifi interfaces.  If the device doesn't want to support tethering over Wifi this
          should be empty.  An example would be "softap.*" -->
     <string-array translatable="false" name="config_tether_wifi_regexs">
-        <item>"athap0"</item>
+        <item>"athap\\d"</item>
+        <item>"wlan\\d"</item>
     </string-array>
 
     <!-- List of regexpressions describing the interface (if any) that represent tetherable
@@ -47,76 +48,21 @@
 
     <bool name="config_unplugTurnsOnScreen">true</bool>
 
-     <!-- Values greater or equal to 0 will enable electronbeam screen-on
-         animation with the specified delay (in milliseconds), -1 will disable the animation -->
-    <integer name="config_screenOnAnimation">250</integer>
-
-    <!-- True will enable the electron beam screen-off animation. -->
-    <bool name="config_screenOffAnimation">true</bool>
-
     <!-- Timeout in MS for how long you have to long-press the back key to
          kill the foreground app. -->
     <integer name="config_backKillTimeout">1000</integer>
 
-    <!-- True will enable the electron beam screen-off animation. -->
-    <bool name="config_screenOffAnimation">true</bool>
+    <bool name="config_animateScreenLights">false</bool>
     
     <bool name="config_batterySdCardAccessibility">true</bool>
 
     <bool name="config_intrusiveNotificationLed">false</bool>
 
-    <integer-array name="config_autoBrightnessLevels">
-        <item>1</item>
-        <item>5</item>
-        <item>11</item>
-        <item>15</item>
-    </integer-array>
-    <!-- Array of output values for LCD backlight corresponding to the LUX values
-         in the config_autoBrightnessLevels array.  This array should have size one greater
-         than the size of the config_autoBrightnessLevels array.
-    -->
-    <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>25</item>
-        <item>55</item>
-        <item>70</item>
-        <item>70</item>
-        <item>250</item>
-    </integer-array>
-
-    <!-- Array of output values for button backlight corresponding to the LUX values
-         in the config_autoBrightnessLevels array.  This array should have size one greater
-         than the size of the config_autoBrightnessLevels array.
-    -->
-    <integer-array name="config_autoBrightnessButtonBacklightValues">
-        <item>255</item>
-        <item>255</item>
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
-    </integer-array>
-
-    <!-- Array of output values for keyboard backlight corresponding to the LUX values
-         in the config_autoBrightnessLevels array.  This array should have size one greater
-         than the size of the config_autoBrightnessLevels array.
-         This must be overridden in platform specific overlays -->
-
-    <integer-array name="config_autoBrightnessKeyboardBacklightValues">
-        <item>255</item>
-        <item>255</item>
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
-    </integer-array>
-
     <!-- Component name of the service providing network location support. -->
-    <string name="config_networkLocationProviderPackageName">com.google.android.location.NetworkLocationProvider</string>
+    <string name="config_networkLocationProviderPackageName" translatable="false">com.google.android.location</string>
 
     <!-- Component name of the service providing geocoder API support. -->
-    <string name="config_geocodeProviderPackageName">com.google.android.location.GeocodeProvider</string>
-
-    <!-- Boolean indicating if restoring network selection should be skipped -->
-    <!-- The restoring is handled by modem if it is true -->
-    <bool translatable="false" name="skip_restoring_network_selection">true</bool>
+    <string name="config_geocodeProviderPackageName" translatable="false">com.google.android.location</string>
 
     <!-- Boolean indicating if current platform supports bluetooth SCO for off call
     use cases -->
@@ -131,29 +77,4 @@
     <bool name="config_bluetooth_adapter_quick_switch">false</bool>
 
     <string name="config_legacyUmsLunFile">/sys/devices/platform/usb_mass_storage/lun0/file</string>
-    
-    <!-- Hardware 'face' keys present on the device, stored as a bit field.
-         This integer should equal the sum of the corresponding value for each
-         of the following keys present:
-             1 - Home
-             2 - Back
-             4 - Menu
-             8 - Assistant (search)
-            16 - App switch
-         For example, a device with Home, Back and Menu keys would set this
-         config to 7. -->
-    <integer name="config_deviceHardwareKeys">7</integer>
-
-	<!-- Hardware 'face' keys present on the device, stored as a bit field.
-         This integer should equal the sum of the corresponding value for each
-         of the following keys present:
-             1 - Home
-             2 - Back
-             4 - Menu
-             8 - Assistant (search)
-            16 - App switch
-         For example, a device with Home, Back and Menu keys would set this
-         config to 7. -->
-    <integer name="config_deviceHardwareKeys">7</integer>
-
 </resources>

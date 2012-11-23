@@ -8,7 +8,7 @@ $(call inherit-product, vendor/cm/config/common_mini_phone.mk)
 $(call inherit-product, device/samsung/cooper/full_cooper.mk)
 
 # Release name and versioning
-PRODUCT_RELEASE_NAME := GalaxyAce
+PRODUCT_RELEASE_NAME := GalaxyGio
 PRODUCT_VERSION_DEVICE_SPECIFIC := -GT-S5830
 -include vendor/cm/config/common_versions.mk
 
@@ -17,4 +17,4 @@ PRODUCT_DEVICE := cooper
 PRODUCT_NAME := cm_cooper
 
 ## Bootanimation
-TARGET_BOOTANIMATION_NAME := 320
+TARGET_BOOTANIMATION_NAME := vertical-320x480

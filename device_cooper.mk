@@ -27,7 +27,21 @@ PRODUCT_PACKAGES += \
 
 ## Camera
 PRODUCT_PACKAGES += \
-    camera.cooper
+    camera.cooper \
+    libjni_legacymosaic \
+    LegacyCamera
+
+## Liblights
+#PRODUCT_PACKAGES += \
+#    lights.cooper
+
+## Wifi
+#PRODUCT_PACKAGES += \
+#    abtfilt \
+#    wlan_tool \
+#    wmiconfig \
+    eeprom-AR6002 \
+    ar6000.ko
 
 ## Ramdisk
 PRODUCT_COPY_FILES += \
