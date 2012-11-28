@@ -8,6 +8,7 @@ ro.sf.lcd_density=160
 video.accelerate.hw=1
 debug.sf.hw=1
 persist.sys.use_dithering=2
+debug.sf.no_hw_vsync=1
 
 ## Media
 media.stagefright.enable-player=true
