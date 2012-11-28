@@ -48,6 +48,7 @@ ro.ril.def.agps.feature=1
 
 ## Wi-Fi interface
 wifi.interface=wlan0
+wifi.ap.interface=athap0
 
 ## Memory
 sys.mem.max_hidden_apps=10
