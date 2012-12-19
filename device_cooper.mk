@@ -20,11 +20,6 @@ include device/samsung/msm7x27-common/common.mk
 ## Device specific overlay
 DEVICE_PACKAGE_OVERLAYS := device/samsung/cooper/overlay
 
-## Audio
-PRODUCT_PACKAGES += \
-    audio.primary.cooper \
-    audio_policy.cooper
-
 ## Wifi
 PRODUCT_PACKAGES += \
     abtfilt \
