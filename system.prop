@@ -2,86 +2,77 @@
 # system.prop for GT-S5830
 #
 
-## Graphics
+# Graphics
 ro.opengles.version=131072
 ro.sf.lcd_density=160
 video.accelerate.hw=1
-debug.sf.hw=1
-persist.sys.use_dithering=2
 debug.sf.no_hw_vsync=1
+debug.composition.type=gpu
+debug.hwui.render_dirty_regions=false
+persist.sys.use_dithering=0
 
-## Media
+# Qualcomm
+debug.qctwa.statusbar=1
+debug.qctwa.preservebuf=1
+com.qc.hardware=true
+debug.enabletr=false
+
+# Camcorder
+debug.camcorder.disablemeta=1
+
+# RIL, telephony
+rild.libpath=/system/lib/libsec-ril.so
+rild.libargs=-d /dev/smd0
+ro.telephony.default_network=0
+ro.com.android.dataroaming=false
+ro.ril.hsxpa=1
+ro.ril.gprsclass=10
+ro.telephony.ril_class=CooperRIL
+mobiledata.interfaces=pdp0,gprs,ppp0
+ro.telephony.call_ring.delay=0
+ro.ril.disable.power.collapse=0
+DEVICE_PROVISIONED=1
+
+# Media
 media.stagefright.enable-player=true
 media.stagefright.enable-meta=true
 media.stagefright.enable-scan=true
 media.stagefright.enable-http=true
 media.stagefright.enable-record=true
 
-## Qualcomm
-debug.gr.numframebuffers=3
-debug.qctwa.statusbar=1
-debug.qctwa.preservebuf=1
-com.qc.hardware=true
-debug.enabletr=false
-debug.hwui.render_dirty_regions=false
+# Wifi interface
+wifi.interface=wlan0
+wifi.supplicant_scan_interval=60
+wifi.ap.interface=athap0
 
-## View configuration for QVGA.
-#view.fading_edge_length=8
-#view.touch_slop=15
-#view.minimum_fling_velocity=25
-#ro.max.fling_velocity=4000
-#view.scroll_friction=0.008
+# System and Misc.
+ro.tether.denied=false
+sys.checkfs.fat=false
 
-## RIL, telephony
-rild.libpath=/system/lib/libsec-ril.so
-rild.libargs=-d /dev/smd0
-ro.ril.gprsclass=10
-ro.telephony.ril_class=SamsungMSMRIL
-mobiledata.interfaces=pdp0,gprs,ppp0
-ro.telephony.call_ring.delay=0
-ro.ril.disable.power.collapse=0
-DEVICE_PROVISIONED=1
-
-## A-GPS fix by Mardon
+# A-GPS
 ro.ril.def.agps.mode=2
 ro.ril.def.agps.feature=1
 
-## Wi-Fi interface
-wifi.interface=wlan0
-wifi.ap.interface=athap0
-
-## Memory
-sys.mem.max_hidden_apps=10
-
-sys.mem.FOREGROUND_APP_ADJ=0
-sys.mem.VISIBLE_APP_ADJ=3
-sys.mem.PERCEPTIBLE_APP_ADJ=6
-sys.mem.BACKUP_APP_ADJ=10
-sys.mem.HIDDEN_APP_MIN_ADJ=12
-sys.mem.HIDDEN_APP_MAX_ADJ=15
-
-sys.mem.FOREGROUND_APP_MEM=8192
-sys.mem.VISIBLE_APP_MEM=12288
-sys.mem.PERCEPTIBLE_APP_MEM=30720
-sys.mem.BACKUP_APP_MEM=36864
-sys.mem.HIDDEN_APP_MIN_MEM=41984
-sys.mem.HIDDEN_APP_MAX_MEM=48128
-
-## Dalvik
-dalvik.vm.lockprof.threshold=500
-dalvik.vm.dexopt-flags=m=y
-dalvik.vm.heapstartsize=5m	
-dalvik.vm.heapgrowthlimit=24m	
-dalvik.vm.heapsize=64m
-dalvik.vm.execution-mode=int:jit
-dalvik.vm.dexopt-data-only=1
-dalvik.vm.verify_bytecode=false
-dalvik.vm.checkjni=0
-
-## USB
+# USB
 persist.sys.usb.config=adb,mass_storage
 persist.service.adb.enable=1
 ro.vold.umsdirtyratio=20
 
-## Camcorder
-debug.camcorder.disablemeta=1
+# Dalvik
+dalvik.vm.lockprof.threshold=500
+dalvik.vm.dexopt-flags=m=y
+dalvik.vm.heapstartsize=5m
+dalvik.vm.heapgrowthlimit=24m
+dalvik.vm.heapsize=64m
+dalvik.vm.verify_bytecode=false
+dalvik.vm.execution-mode=int:jit
+dalvik.vm.dexopt-data-only=1
+dalvik.vm.checkjni=0
+
+# Other
+dev.sfbootcomplete=0
+ro.com.google.locationfeatures=1
+ro.setupwizard.enable_bypass=1
+ro.config.play.bootsound=0
+ro.com.android.wifi-watchlist=GoogleGuest
+pm.sleep_mode=1
