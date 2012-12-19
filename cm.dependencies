@@ -7,5 +7,9 @@
    "repository": "android_device_samsung_msm7x27-common",
    "target_path": "device/samsung/msm7x27-common",
    "branch": "cm-10.1"
+ }, {
+   "repository": "proprietary_vendor_samsung",
+   "target_path": "vendor/samsung",
+   "branch": "cm-10.1"
  }
 ]
