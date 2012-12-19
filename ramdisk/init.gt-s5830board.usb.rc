@@ -1,0 +1,25 @@
+on boot
+
+on property:sys.usb.config=mass_storage
+    start adb
+    setprop sys.usb.state $sys.usb.config
+
+on property:sys.usb.config=adb,mass_storage
+    start adbd
+    setprop sys.usb.state $sys.usb.config
+
+on property:sys.usb.config=mass_storage,adb
+    start adbd
+    setprop sys.usb.state $sys.usb.config
+
+on property:sys.usb.config=rndis
+    exec /system/bin/netcfg usb0 up
+    write /sys/class/usb_composite/rndis/enable 1
+    setprop sys.usb.state $sys.usb.config
+
+on property:sys.usb.config=rndis,adb
+    exec /system/bin/netcfg usb0 up
+    write /sys/class/usb_composite/rndis/enable 1
+    #start adbd
+    setprop sys.usb.state $sys.usb.config
+
