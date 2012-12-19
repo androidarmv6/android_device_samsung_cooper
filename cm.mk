@@ -2,7 +2,7 @@
 #$(call inherit-product, vendor/cm/config/gsm.mk)
 
 # Inherit some common CM stuff.
-#$(call inherit-product, vendor/cm/config/common_mini_phone.mk)
+$(call inherit-product, vendor/cm/config/common_mini_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/cooper/full_cooper.mk)
@@ -17,4 +17,4 @@ PRODUCT_DEVICE := cooper
 PRODUCT_NAME := cm_cooper
 
 ## Bootanimation
-#TARGET_BOOTANIMATION_NAME := vertical-320x480
+TARGET_BOOTANIMATION_NAME := vertical-320x480
