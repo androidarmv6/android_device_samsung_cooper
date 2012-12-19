@@ -25,15 +25,6 @@ PRODUCT_PACKAGES += \
     audio.primary.cooper \
     audio_policy.cooper
 
-## Camera
-PRODUCT_PACKAGES += \
-    camera.cooper \
-    LegacyCamera
-
-## Liblights
-#PRODUCT_PACKAGES += \
-#    lights.cooper
-
 ## Wifi
 PRODUCT_PACKAGES += \
     abtfilt \
