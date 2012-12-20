@@ -26,6 +26,9 @@ PRODUCT_PACKAGES += \
     wlan_tool \
     wmiconfig
 
+PRODUCT_PACKAGES += \
+    Torch
+
 ## Ramdisk
 PRODUCT_COPY_FILES += \
     device/samsung/cooper/ramdisk/init.gt-s5830board.rc:root/init.gt-s5830board.rc \
