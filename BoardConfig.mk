@@ -23,6 +23,8 @@ include device/samsung/msm7x27-common/BoardConfigCommon.mk
 TARGET_BOOTLOADER_BOARD_NAME := cooper
 TARGET_KERNEL_CONFIG := cyanogenmod_cooper_defconfig
 
+SMALLER_FONT_FOOTPRINT := true
+
 ## Assert
 TARGET_OTA_ASSERT_DEVICE := cooper,GT-S5830
 
