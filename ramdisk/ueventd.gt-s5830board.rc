@@ -67,7 +67,7 @@
 /dev/msm_amrnb_in            0640  system    audio
 
 ## Bluetoth
-/dev/ttyHS0		     0666  bluetooth	bluetooth
+/dev/ttyHS0		     0666  bluetooth	net_bt_stack
 
 ## Misc
 /dev/oncrpc/*                0660  root      system
