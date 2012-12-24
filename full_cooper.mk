@@ -25,6 +25,7 @@ $(call inherit-product, device/samsung/cooper/device_cooper.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_no_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/locales_full.mk)
 
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := full_cooper
