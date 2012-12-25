@@ -54,7 +54,7 @@ ro.ril.def.agps.mode=2
 ro.ril.def.agps.feature=1
 
 # USB
-persist.sys.usb.config=mass_storage
+persist.sys.usb.config=mass_storage,adb
 persist.service.adb.enable=1
 ro.vold.umsdirtyratio=20
 
