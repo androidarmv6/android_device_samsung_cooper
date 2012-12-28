@@ -22,11 +22,6 @@ include device/samsung/msm7x27-common/BoardConfigCommon.mk
 ## Kernel, bootloader
 TARGET_BOOTLOADER_BOARD_NAME := cooper
 TARGET_KERNEL_CONFIG := cyanogenmod_cooper_defconfig
-
-SMALLER_FONT_FOOTPRINT := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/cooper/bluetooth
-
-## Assert
 TARGET_OTA_ASSERT_DEVICE := cooper,GT-S5830
 
 ## Recovery
@@ -36,3 +31,7 @@ BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/cooper/recovery/recover
 BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/cooper/recovery/graphics.c
 TARGET_RECOVERY_INITRC := device/samsung/cooper/recovery/recovery.rc
 TARGET_RECOVERY_FSTAB := device/samsung/cooper/recovery/recovery.fstab
+
+SMALLER_FONT_FOOTPRINT := true
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/cooper/bluetooth
+
