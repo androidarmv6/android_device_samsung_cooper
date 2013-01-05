@@ -41,3 +41,7 @@ PRODUCT_COPY_FILES += \
     device/samsung/msm7x27-common/ramdisk/ueventd.msm7x27.rc:root/ueventd.gt-s5830board.rc \
     device/samsung/cooper/ramdisk/COOPER.rle:root/COOPER.rle
 
+## Memory
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.purgeable_assets=1
+
