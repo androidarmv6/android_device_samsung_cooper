@@ -19,6 +19,9 @@
 
 include device/samsung/msm7x27-common/BoardConfigCommon.mk
 
+## Graphics
+TARGET_DISABLE_TRIPLE_BUFFERING := true
+
 ## Kernel, bootloader
 TARGET_BOOTLOADER_BOARD_NAME := cooper
 TARGET_KERNEL_CONFIG := cyanogenmod_cooper_defconfig
