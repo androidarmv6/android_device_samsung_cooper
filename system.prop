@@ -46,7 +46,7 @@ dalvik.vm.heapstartsize=5m
 dalvik.vm.heapgrowthlimit=24m
 dalvik.vm.heapsize=64m
 dalvik.vm.verify_bytecode=false
-dalvik.vm.execution-mode=int:jit
+dalvik.vm.execution-mode=int:fast
 dalvik.vm.dexopt-data-only=1
 dalvik.vm.checkjni=0
 
