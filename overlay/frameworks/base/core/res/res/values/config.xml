@@ -36,6 +36,8 @@
         <!-- The Google Network Location Services location provider -->
         <item>com.google.android.location</item>
     </string-array>
-    <integer name="config_deviceHardwareKeys">7</integer>
-    <bool name="config_samsung_stk">true</bool>
+
+        <bool name="config_animateScreenLights">false</bool>
+        <integer name="config_deviceHardwareKeys">7</integer>
+        <bool name="config_samsung_stk">true</bool>
 </resources>
