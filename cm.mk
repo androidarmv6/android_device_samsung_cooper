@@ -13,7 +13,7 @@ $(call inherit-product, vendor/cm/config/mini.mk)
 PRODUCT_NAME := cm_cooper
 PRODUCT_DEVICE := cooper
 PRODUCT_BRAND := Samsung
-PRODUCT_MODEL := GT-S5660
+PRODUCT_MODEL := GT-S5830
 PRODUCT_MANUFACTURER := Samsung
 PRODUCT_CHARACTERISTICS := phone
 
