@@ -23,9 +23,6 @@ PRODUCT_PACKAGES += \
 
 ## Ramdisk
 PRODUCT_COPY_FILES += \
-    device/samsung/msm7x27-common/ramdisk/init.msm7x27.rc:root/init.gt-s5830board.rc \
-    device/samsung/msm7x27-common/ramdisk/init.msm7x27.usb.rc:root/init.msm7x27.usb.rc \
-    device/samsung/msm7x27-common/ramdisk/ueventd.msm7x27.rc:root/ueventd.gt-s5830board.rc \
     device/samsung/cooper/ramdisk/COOPER.rle:root/COOPER.rle
 
 # Inherit products (Most specific first)
