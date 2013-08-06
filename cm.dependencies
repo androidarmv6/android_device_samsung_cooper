@@ -20,6 +20,10 @@
    "target_path": "vendor/qcom/msm7x27",
    "branch": "cm-10.2"
  }, {
+   "repository": "android_hardware_atheros_wifi_libs",
+   "target_path": "hardware/atheros/wifi/libs",
+   "branch": "cm-10.2"
+ }, {
    "repository": "android_hardware_atheros_ath6kl-compat",
    "target_path": "hardware/atheros/ath6kl-compat",
    "branch": "cm-10.1"
