@@ -2,57 +2,10 @@
 # system.prop for GT-S5830
 #
 
-# Graphics
-ro.sf.lcd_density=160
-video.accelerate.hw=1
-debug.sf.no_hw_vsync=1
-debug.composition.type=gpu
-
-# RIL, telephony
-rild.libpath=/system/lib/libsec-ril.so
-rild.libargs=-d /dev/smd0
-ro.telephony.default_network=0
-ro.com.android.dataroaming=false
-ro.ril.hsxpa=1
-ro.ril.gprsclass=10
-ro.telephony.ril_class=SamsungMSMRIL
-mobiledata.interfaces=pdp0,gprs,ppp0
-ro.ril.disable.power.collapse=0
-DEVICE_PROVISIONED=1
-
-# Wifi interface
-wifi.interface=wlan0
-wifi.supplicant_scan_interval=180
-wifi.ap.interface=athap0
-
-# System and Misc.
-ro.tether.denied=false
-sys.checkfs.fat=false
-
-# A-GPS
-ro.ril.def.agps.mode=2
-ro.ril.def.agps.feature=1
-
-# USB
-persist.sys.usb.config=mass_storage,adb
-persist.service.adb.enable=1
-ro.vold.umsdirtyratio=20
-
 # Dalvik
-dalvik.vm.lockprof.threshold=500
-dalvik.vm.dexopt-flags=m=y
-dalvik.vm.heapstartsize=5m
 dalvik.vm.heapgrowthlimit=24m
 dalvik.vm.heapsize=64m
-dalvik.vm.verify_bytecode=false
-dalvik.vm.execution-mode=int:fast
-dalvik.vm.dexopt-data-only=1
-dalvik.vm.checkjni=0
+dalvik.vm.heapstartsize=5m
 
-# Other
-dev.sfbootcomplete=0
-ro.com.google.locationfeatures=1
-ro.setupwizard.enable_bypass=1
-ro.config.play.bootsound=0
-ro.com.android.wifi-watchlist=GoogleGuest
-pm.sleep_mode=1
+# Graphics
+ro.sf.lcd_density=160

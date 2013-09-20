@@ -19,9 +19,6 @@
 
 include device/samsung/msm7x27-common/BoardConfigCommon.mk
 
-## Graphics
-TARGET_DISABLE_TRIPLE_BUFFERING := true
-
 ## Kernel, bootloader
 TARGET_BOOTLOADER_BOARD_NAME := cooper
 TARGET_KERNEL_CONFIG := cyanogenmod_cooper_defconfig
@@ -30,12 +27,7 @@ TARGET_OTA_ASSERT_DEVICE := cooper,GT-S5830
 ## Recovery
 BOARD_LDPI_RECOVERY := true
 BOARD_USE_CUSTOM_RECOVERY_FONT := "<font_7x16.h>"
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/cooper/recovery/recovery_ui.c
-BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/cooper/recovery/graphics.c
-TARGET_RECOVERY_INITRC := device/samsung/cooper/recovery/recovery.rc
-TARGET_RECOVERY_FSTAB := device/samsung/cooper/recovery/fstab.cooper
-RECOVERY_FSTAB_VERSION := 2
 
-SMALLER_FONT_FOOTPRINT := true
+## Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/cooper/bluetooth
 
