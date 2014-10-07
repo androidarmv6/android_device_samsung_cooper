@@ -17,6 +17,9 @@
 # Product-specific compile-time definitions.
 #
 
+## TWRP
+DEVICE_RESOLUTION := 320x480
+
 include device/samsung/msm7x27-common/BoardConfigCommon.mk
 
 ## Kernel, bootloader
