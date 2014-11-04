@@ -13,13 +13,10 @@
 # limitations under the License.
 
 ## Note: this file and all of its includes are parsed before any
-## BoardConfig files. 3.0 Kernel & ath6kl configuration must be set here.
+## BoardConfig files. 3.0 Kernel configuration must be set here.
 
 ## Build the 3.0.x Kernel
-#BUILD_WITH_30X_KERNEL := true
-
-## Build the ath6kl-compat driver
-BOARD_WLAN_DEVICE := ath6kl_compat
+#BUILD_WITH_30X_KERNEL := false
 
 PRODUCT_PACKAGES += \
     Torch
